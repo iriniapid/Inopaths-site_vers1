@@ -1,0 +1,158 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Hind+Guntur" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+    <script src="handsontable-master\handsontable-master\dist\handsontable.full.js"></script>
+
+    <link rel="stylesheet" media="screen" href="handsontable-master\handsontable-master\dist\handsontable.full.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <title>excel_manipulation</title>
+  </head>
+
+  <body>
+        <div class="InLine">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+          <!-- The button below creates the hamburger drop-down for the hidden navbar elements-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar-menu-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+        
+        <div class="collapse navbar-collapse" id="my-navbar-menu-collapse"> <!--this class hides  the navbar elements included when the brow align-items-centerser's window is minimized.The id is for the drop-down hamburger button to recognize-->
+          <ul class="nav navbar-nav">
+            <li><a href="#" class="INO_brand"></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Main Page</a>
+            </li><li><a href="#">Objectives</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">New Tools</a></li>
+            <li><a href="#">Publications</a></li>
+            <div id="log-sign" class="nav navbar-nav ">
+              <li><a href="#" onclick="document.getElementById('id02').style.display='block'">Login</a></li>
+              <li><a href="#" onclick="document.getElementById('id01').style.display='block'">Sign Up</a></li>
+              <li><a href="index.html">Logout</a></li>
+            </div>
+          </ul>
+        </div>
+      </div>  
+    </nav>
+
+  <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+      <form id="sign-up" class="modal-content animate" action="#" method="get">
+        <div class="containerbox">
+          <label><b>Username</b></label>
+          <input id="username" type="text" placeholder="Enter Username" required="">
+
+          <label><b>Email</b></label>
+          <input id="email" type="email" placeholder="Enter your email" required="">
+
+          <label><b>Password</b></label>
+          <input id="password" type="password" placeholder="Enter Password (8 chars min) *" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required=""> 
+
+          <label><b>Repeat Password</b></label>
+          <input id="repeat_password" type="password" placeholder="Repeat Password" name="psw-repeat" required="">
+          
+          <div class="clearfix">
+            <button type="submit" class="signupbtn">Sign Up</button>
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> 
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="id02" class="modal">
+    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+      <form id="login" class="modal-content animate" action="#">
+        <div class="containerbox">
+          <label><b>Username</b></label>
+          <input id="username1" type="text" placeholder="Enter Username" required="">
+
+          <label><b>Password</b></label>
+          <input id="password1" type="password" placeholder="Enter Password" required="">
+
+          <div class="clearfix">
+            <button type="submit" class="signupbtn">Login</button>
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>  
+          </div>
+          <a href="#" id="Reset" onclick="document.getElementById('id03').style.display='block'; document.getElementById('id02').style.display='none'">Frogot Username or Password ?</a>
+        </div>
+      </form>
+    </div>
+
+    <div id="id03" class="modal">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+      <form id="Forgot" class="modal-content animate" action="#">
+        <div class="containerbox">
+          <input id="usernameR" type="text" placeholder="Enter your email or username " required="">
+          <div class="clearfix">
+            <button type="submit" class="signupbtn">Submit</button>
+            <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>  
+          </div>
+        </div>
+      </form>
+    </div>
+   <form id="select_var"  method="get">
+      <div class="containerbox">
+      <label id="select_title"><b>Select variable to display</b></label>  
+        <select id="variable_lst">
+          <option value='vdriver'>Macroeconomic driver IN specific units</option>
+          <option value='vservices'>Demand for energy services IN specific units</option>
+          <option value='vuseful'>Demand for energy IN useful terms after savings where applicable IN specific units</option>
+          <option value='vprocess'>Demand for energy IN useful terms per process IN specific units</option>  
+          <option value='vprocessfei'>Final energy intensity of a process AS a ratio</option>
+          <option value='venergy'>Demand for energy IN final energy terms per fuel IN ktoe</option>
+          <option value='vlos'>Transmission and distribution losses IN ktoe</option>
+          <option value='vfinal'>Demand for energy IN final energy terms per fuel IN ktoe</option>
+          <option value='vcf'>Demand for energy total final and non energy per fuel IN ktoe</option>
+          <option value='vcis'>Demand for energy iron and steel per fuel IN ktoe</option>
+          <option value='vcnf'>Demand for energy non ferrous per fuel IN ktoe</option>
+          <option value='vcch'>Demand for energy chemicals per fuel IN ktoe</option>
+          <option value='vcpp'>Demand for energy paper and pulp per fuel IN ktoe</option>
+          <option value='vcbm'>Demand for energy building materials per fuel IN ktoe</option>
+          <option value='vcfd'>Demand for energy food beverages and tobacco per fuel IN ktoe</option>
+          <option value='vceg'>Demand for energy equipment goods per fuel IN ktoe</option>
+          <option value='vcot'>Demand for energy other industries per fuel IN ktoe</option>
+          <option value='vcne'>Demand for energy non energy per fuel IN ktoe</option>
+          <option value='vchou'>Demand for energy residential per fuel IN ktoe</option>
+          <option value='vcser'>Demand for energy services sectors per fuel IN ktoe</option>
+          <option value='vcagr'>Demand for energy agriculture per fuel IN ktoe</option>
+          <option value='vctr'>Demand for energy transport sectors per fuel IN ktoe</option>
+          <option value='vcrt'>Demand for energy road transport sectors per fuel IN ktoe</option>
+          <option value='vcat'>Demand for energy aviation transport sectors per fuel IN ktoe</option>
+          <option value='vcni'>Demand for energy inland navigation transport sectors per fuel IN ktoe</option>
+          <option value='vcptr'>Demand for energy passenger transport sectors per fuel IN ktoe</option>
+          <option value='vcftr'>Demand for energy freight transport sectors per fuel IN ktoe</option>
+          <option value='vcotr'>Demand for energy other transport sectors per fuel IN ktoe</option>
+          <option value='vcs'>Change of stocks</option>
+        </select>
+        <button type="button" class="start">Display</button>
+      </div>
+    </form>
+
+    <div id="Display2">
+
+      <div id="output_table" class="hot handsontable htColumnHeaders"></div>
+
+    </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>  
+  <script type="text/javascript" src="simulator_output.js"></script>
+  </body>
+</html>

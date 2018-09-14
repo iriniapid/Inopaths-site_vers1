@@ -1,0 +1,437 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<link href="http://fonts.googleapis.com/css?family=Hind+Guntur" rel="stylesheet">
+		<link href="style.css" type="text/css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+		<script src="handsontable-master\handsontable-master\dist\handsontable.full.js"></script>
+
+		<link rel="stylesheet" media="screen" href="handsontable-master\handsontable-master\dist\handsontable.full.min.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+		<title>excel_manipulation</title>
+	</head>
+
+	<body>
+        <div class="InLine">
+    <nav class="navbar navbar-default" role="navigation">
+    	<div class="container">
+          <!-- The button below creates the hamburger drop-down for the hidden navbar elements-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar-menu-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+        
+        <div class="collapse navbar-collapse" id="my-navbar-menu-collapse"> <!--this class hides  the navbar elements included when the brow align-items-centerser's window is minimized.The id is for the drop-down hamburger button to recognize-->
+          <ul class="nav navbar-nav">
+            <li><a href="#" class="INO_brand"></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Main Page</a>
+            </li><li><a href="#">Objectives</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">New Tools</a></li>
+            <li><a href="#">Publications</a></li>
+            <div id="log-sign" class="nav navbar-nav ">
+              <li><a href="#" onclick="document.getElementById('id02').style.display='block'">Login</a></li>
+              <li><a href="#" onclick="document.getElementById('id01').style.display='block'">Sign Up</a></li>
+              <li><a href="index.html">Logout</a></li>
+            </div>
+          </ul>
+        </div>
+      </div>  
+    </nav>
+
+	<div id="id01" class="modal">
+	    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+	    <form id="sign-up" class="modal-content animate" action="#" method="get">
+	      <div class="containerbox">
+	        <label><b>Username</b></label>
+	        <input id="username" type="text" placeholder="Enter Username" required="">
+
+	        <label><b>Email</b></label>
+	        <input id="email" type="email" placeholder="Enter your email" required="">
+
+	        <label><b>Password</b></label>
+	        <input id="password" type="password" placeholder="Enter Password (8 chars min) *" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required=""> 
+
+	        <label><b>Repeat Password</b></label>
+	        <input id="repeat_password" type="password" placeholder="Repeat Password" name="psw-repeat" required="">
+	        
+	        <div class="clearfix">
+	          <button type="submit" class="signupbtn">Sign Up</button>
+	          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> 
+	        </div>
+	      </div>
+	    </form>
+  	</div>
+
+    <div id="id02" class="modal">
+    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+	    <form id="login" class="modal-content animate" action="#">
+	      <div class="containerbox">
+	        <label><b>Username</b></label>
+	        <input id="username1" type="text" placeholder="Enter Username" required="">
+
+	        <label><b>Password</b></label>
+	        <input id="password1" type="password" placeholder="Enter Password" required="">
+
+	        <div class="clearfix">
+	          <button type="submit" class="signupbtn">Login</button>
+	          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>  
+	        </div>
+	        <a href="#" id="Reset" onclick="document.getElementById('id03').style.display='block'; document.getElementById('id02').style.display='none'">Forgot Username or Password ?</a>
+	      </div>
+	    </form>
+    </div>
+
+    <div id="id03" class="modal">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+      <form id="Forgot" class="modal-content animate" action="#">
+        <div class="containerbox">
+          <input id="usernameR" type="text" placeholder="Enter your email or username " required="">
+          <div class="clearfix">
+            <button type="submit" class="signupbtn">Submit</button>
+            <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>  
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="btn-group btn-group-justified" role="nav" aria-label="...">
+      <div class="container">
+  		  <div class="btn-group" role="group">
+    	 	<button rel="Macroeconomics" type="button" class="btn btn-default">Macroeconomics</button>
+  		  </div>
+  		  <div class="btn-group" role="group">
+  		    <button rel="Services" type="button" class="btn btn-default">Services</button>
+  		  </div>
+  		  <div class="btn-group" role="group">
+  		    <button rel="Useful" type="button" class="btn btn-default">Useful</button>
+  		  </div>
+  		  <div class="btn-group" role="group">
+  		    <button rel="Final_eff" type="button" class="btn btn-default">Final_eff</button>
+  		  </div>
+  		  <div class="btn-group" role="group">
+  		    <button rel="Fuel_Mix" type="button" class="btn btn-default">Fuel_Mix</button>
+  		  </div>
+  		  <div class="btn-group" role="group">
+  		    <button rel="Power" type="button" class="btn btn-default">Power</button>
+  		  </div>
+  		  <div class="btn-group" role="group">
+  		    <button rel="Boilers" type="button" class="btn btn-default">Boilers</button>
+  		  </div>
+  		  <div class="btn-group" role="group">
+  		    <button rel="Energy_Branch" type="button" class="btn btn-default">Energy_Branch</button>
+  		  </div>
+  		  <div class="btn-group" role="group">
+  		    <button rel="Primary" type="button" class="btn btn-default">Primary</button>
+  		  </div>
+  		  <div class="btn-group" role="group">
+  		    <button rel="Clean_Gas" type="button" class="btn btn-default">Clean_Gas</button>
+  		  </div>
+        <div class="btn-group" role="group">
+          <button id="run_model" type="button" class="btn btn-default" style="background-color:rgba(242,83,13,0.7);">Run the model</button>
+        </div>
+      </div>
+	</div>
+    <div id="Display">
+
+    	<div id="Macroeconomics" class="sheet_tabs" style="display:none;">
+    		<div class="row">
+          <div class="col-lg-2 center-block">
+    			  <div id="Macropa" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-2 center-block"> 
+            <div id="Macropa_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+    			  <div id="Macro" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5">
+            <div id="Driverpa" class="hot handsontable htColumnHeaders"></div>
+          </div>
+        </div>  		
+    	</div>
+
+      <div id="Services" class="sheet_tabs" style="display:none;">
+        <div class="row align-items-center" >
+          <div class="col-lg-5 ">
+            <div id="Servicesel" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="Servicesel_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>
+        <div class="row align-items-center">          
+          <div class="col-lg-5 " >
+            <div id="Usefulserv_inputs" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="Usefulserv_inputs_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+          <div class="col-lg-5 ">
+            <div id="Usefulserv" class="hot handsontable htColumnHeaders"></div>
+          </div>
+        </div>
+        <div class="row align-items-center" >
+          <div class="col-lg-5 ">
+            <div id="ProcessUEI_inputs" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="ProcessUEI_inputs_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+          <div class="col-lg-5 ">
+            <div id="ProcessUEI" class="hot handsontable htColumnHeaders"></div>
+          </div>
+        </div>        
+      </div>
+
+      <div id="Useful" class="sheet_tabs" style="display:none;">
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-5">
+            <div id="ProcessUShares" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 col-md-5">
+            <div id="ProcessUShares_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div> 
+      </div>
+
+      <div id="Final_eff" class="sheet_tabs" style="display:none;">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-5">
+            <div id="ProcessFEIpa" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 col-md-5"> 
+            <div id="ProcessFEIpa_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>        
+          <div class="col-lg-5 col-md-5">
+            <div id="ProcessFEI" class="hot handsontable htColumnHeaders"></div>
+          </div>
+        </div>       
+      </div>
+
+      <div id="Fuel_Mix" class="sheet_tabs" style="display:none;">
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-5">
+            <div id="EnergySh" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 col-md-5">
+            <div id="EnergySh_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div> 
+      </div>
+
+      <div id="Power" class="sheet_tabs" style="display:none;">
+        <div class="row align-items-center" >
+          <div class="col-lg-5 ">
+            <div id="LOSrate" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="LOSrate_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>         
+          <div class="col-lg-5 " >
+            <div id="TOPGhelratio" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="TOPGhelratio_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>
+        <div class="row align-items-center" >
+          <div class="col-lg-5 ">
+            <div id="PG_Effic" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="PG_Effic_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+          <div class="col-lg-5 ">
+            <div id="TIPGshares" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="TIPGshares_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>
+        <div class="row align-items-center" >
+          <div class="col-lg-5 ">
+            <div id="CENPGSEC" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="CENPGSEC_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+          <div class="col-lg-5 ">
+            <div id="CENPGshares" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="CENPGshares_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>           
+      </div>
+
+      <div id="Boilers" class="sheet_tabs" style="display:none;">
+        <div class="row align-items-center" >
+          <div class="col-lg-5 ">
+            <div id="TOBOIRatio" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="TOBOIRatio_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>         
+          <div class="col-lg-5 " >
+            <div id="BOI_Effic" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="BOI_Effic_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>
+        <div class="row align-items-center" >
+          <div class="col-lg-5 ">
+            <div id="TIBOIshares" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="TIBOIshares_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+          <div class="col-lg-5 ">
+            <div id="DH_Effic" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="DH_Effic_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>
+        <div class="row align-items-center" >
+          <div class="col-lg-5 ">
+            <div id="TIDHshares" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="TIDHshares_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>           
+      </div>
+
+      <div id="Energy_Branch" class="sheet_tabs" style="display:none;">
+        <div class="row align-items-center" >
+          <div class="col-lg-5 ">
+            <div id="CENOTHSEC" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="CENOTHSEC_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>         
+          <div class="col-lg-5 " >
+            <div id="CENOTHshares" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="CENOTHshares_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>
+        <div class="row align-items-center" >
+          <div class="col-lg-5 ">
+            <div id="CENRFSEC" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 ">
+            <div id="CENRFSEC_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+          <div class="col-lg-5 ">
+            <div id="CENRFshares" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="CENRFshares_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>
+        <div class="row align-items-center" >
+          <div class="col-lg-5 ">
+            <div id="TIOTHratio" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="TIOTHratio_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+          <div class="col-lg-5 ">
+            <div id="TIOTHshares" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="TIOTHshares_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>
+        <div class="row align-items-center" >
+          <div class="col-lg-5 ">
+            <div id="TIRFratio" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="TIRFratio_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+          <div class="col-lg-5 ">
+            <div id="TIRFshares" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="TIRFshares_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>
+        <div class="row align-items-center" > 
+          <div class="col-lg-5 ">
+            <div id="TOOTHrate" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="TOOTHrate_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+          <div class="col-lg-5 ">
+            <div id="TORFrate" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="TORFrate_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>            
+      </div>
+
+      <div id="Primary" class="sheet_tabs" style="display:none;">
+        <div class="row align-items-center" >
+          <div class="col-lg-5 ">
+            <div id="PPRODratio" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="PPRODratio_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>          
+          <div class="col-lg-5 " >
+            <div id="NIMPratio" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="NIMPratio_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>
+        <div class="row align-items-center" >
+          <div class="col-lg-5 ">
+            <div id="CSratio" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 "> 
+            <div id="CSratio_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div>        
+      </div>
+
+      <div id="Clean_Gas" class="sheet_tabs" style="display:none;">
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-5">
+            <div id="CleanGas" class="hot handsontable htColumnHeaders"></div>
+          </div>
+          <div class="col-lg-5 col-md-5">
+            <div id="CleanGas_hide" class="hot handsontable htColumnHeaders" style="display:none;"></div>
+          </div>
+        </div> 
+      </div>
+
+    </div>
+
+	 <div id="wait" style="display:none;"><b>Please wait a few minutes while we calculate results</b></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>  
+	<script type="text/javascript" src="up_down_excel.js"></script>
+	<script type="text/javascript" src="simulator_main.js"></script>
+	</body>
+</html>

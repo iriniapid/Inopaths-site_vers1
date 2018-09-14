@@ -1,0 +1,1210 @@
+*{
+  font-family: 'Miriam Libre','HelveticaNeue',Helvetica,Arial,sans-serif;
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: 'Lato','HelveticaNeue',Helvetica,Arial,sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color:rgb(234,238,238);
+}
+
+p.container {
+  color:#38414c;
+  width: 80%;
+  font-family:"Lato";
+  text-align: center;
+  font-weight: bold;
+}
+
+a{
+  font-family:"Lato";
+  padding-left: 15px;
+  padding-right: 15px;
+  word-spacing: 1px;
+  color:black;
+}
+
+ul {
+  font-family:"Lato";
+  text-align: left;
+  word-spacing: 10px;
+}
+
+ul.body {
+  font-family:"Lato";
+  text-align: left;
+  word-spacing: 10px;
+  margin-bottom: 15%;
+}
+
+li {
+  font-family:"Lato";
+  list-style-type: none;
+}
+
+ul.body >li {
+  font-family:"Lato";
+  padding: 25px 25px 25px 25px;
+  list-style-type: none;
+
+}
+
+li.select{
+  padding-top: %;
+}
+
+
+ul.buttons{
+  margin-left: 25%;
+}
+
+h1 {
+    font-family:"Lato";
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 40px 8px ;
+    color: rgb(65, 67, 186);
+    margin: 100 100 100 100;
+}
+
+h2 {
+  font-family:"Lato";
+  font-size:2em;
+  border: 1px solid black;
+  width: 15%;
+
+}
+
+h4 {
+  font-family:"Lato";
+  font-size:1em;
+  padding:0px 0px;  
+}
+
+input[type=text]{
+  padding: 8px;
+}
+
+label#select_title{
+  font-family:"Lato";
+  float:left;
+  margin-left: 5%;
+  margin-right:60%;
+}
+
+#variable_lst{
+  font-family:"Lato";
+  float: left;
+  margin-left: 5%;
+  margin-right:70%;
+}
+
+button.start{
+  padding: 0.1em;
+  font-family:"Lato";
+  float:left;
+  margin-top: 0.5%;
+  margin-left: 5%;
+}
+
+option {
+  font-family: "Lato";
+}
+
+#log-sign {
+  font-family:"Lato";
+  margin-left:25px;
+  font-size: 16px;
+}
+#log-sign >li>a>i.fa.fa-user {
+  margin-left:25px;
+  font-size: 16px;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>i {
+  font-family:"Lato";
+  color:#b5b8bc;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus{
+  font-family:"Lato";
+  color: white;
+}
+
+.navbar.navbar-default {
+  font-family:"Lato";
+  border:none;
+  background-color: rgb(65,67,186);
+  -moz-border-radius:0 !important;
+  border-radius:0 !important;
+}
+
+div.container.body{
+  background-color:rgba(255,255,255,0.3); 
+}
+
+.navbar{
+  font-family:"Lato";
+  margin-bottom:0px;
+}
+.navbar-brand {
+  background: url("Logo-white.png") center / contain no-repeat;
+  width: 120px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 5px;
+}
+
+.nav.navbar-nav.navbar-right>li>a{
+ margin-right:20px;
+ color: #b5b8bc;
+}
+.nav.navbar-nav.navbar-right>li>a:focus{
+ color: #eff2f4;
+ text-shadow:0px 4px 3px rgba(65, 67, 186,0.4),
+        0px 8px 13px rgba(65, 67, 186,0.2),
+        0px 8px 10px rgba(65, 67, 186,0.4);
+}
+
+.nav.navbar-nav.navbar-right>li>a:hover{
+ color:#dee5ed;
+}
+
+.background {
+  position:absolute;
+  opacity: 0.5;
+  width:100% ;
+  height: 338px;
+  margin-top:60px;
+  z-index: -1;
+  border-bottom: 5px solid rgb(242,83,13);
+}
+
+.title {
+  position: static;
+  font-family:"Miriam Libre"
+  font-size:2em;
+  font-weight: bold;
+  text-align:center;
+  color:#38414c;
+}
+
+.content{
+  margin-top: 5%;
+  margin-bottom:15%;
+}
+
+
+.INO_brand{
+  background: url("Logo-white.png") center / contain no-repeat;
+  width: 10em;
+  padding-left: 0px;
+  padding-right: 15px;
+  margin-top: 8px;
+}
+
+body {
+  font-family: 'Lato','HelveticaNeue',Helvetica,Arial,sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color:rgb(234,238,238);
+}
+
+p.container {
+  color:#38414c;
+  width: 80%;
+  font-family:"Lato";
+  text-align: center;
+  font-weight: bold;
+}
+
+a{
+  font-family:"Lato";
+  padding-left: 15px;
+  padding-right: 15px;
+  word-spacing: 1px;
+  color:black;
+}
+
+ul {
+  font-family:"Lato";
+  text-align: left;
+  word-spacing: 10px;
+}
+
+ul.body {
+  font-family:"Lato";
+  text-align: left;
+  word-spacing: 10px;
+  margin-bottom: 15%;
+}
+
+li {
+  font-family:"Lato";
+  list-style-type: none;
+}
+
+ul.body >li {
+  font-family:"Lato";
+  padding: 25px 25px 25px 25px;
+  list-style-type: none;
+
+}
+
+ul.StartNew_data{
+  text-align: center;
+  word-spacing: 2px;
+}
+
+
+
+
+ul.buttons{
+  margin-left: 25%;
+}
+
+
+
+h1 {
+    font-family:"Lato";
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 40px 8px ;
+    color: rgb(65, 67, 186);
+    margin: 100 100 100 100;
+}
+
+h2 {
+  font-family:"Lato";
+  font-size:2em;
+  border: 1px solid black;
+  width: 15%;
+
+}
+
+h4 {
+  font-family:"Lato";
+  font-size:1em;
+  padding:0px 0px;  
+}
+
+#log-sign {
+  font-family:"Lato";
+  margin-left:25px;
+  font-size: 16px;
+}
+#log-sign >li>a>i.fa.fa-user {
+  margin-left:25px;
+  font-size: 16px;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>i {
+  font-family:"Lato";
+  color:#b5b8bc;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus{
+  font-family:"Lato";
+  color: white;
+}
+
+.navbar.navbar-default {
+  font-family:"Lato";
+  border:none;
+  background-color: rgb(65,67,186);
+  -moz-border-radius:0 !important;
+  border-radius:0 !important;
+}
+
+div.container.body{
+  background-color:rgba(255,255,255,0.3); 
+}
+
+.navbar{
+  font-family:"Lato";
+  margin-bottom:0px;
+}
+.navbar-brand {
+  background: url("Logo-white.png") center / contain no-repeat;
+  width: 120px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 5px;
+}
+
+.nav.navbar-nav.navbar-right>li>a{
+ margin-right:20px;
+ color: #b5b8bc;
+}
+.nav.navbar-nav.navbar-right>li>a:focus{
+ color: #eff2f4;
+ text-shadow:0px 4px 3px rgba(65, 67, 186,0.4),
+        0px 8px 13px rgba(65, 67, 186,0.2),
+        0px 8px 10px rgba(65, 67, 186,0.4);
+}
+
+.nav.navbar-nav.navbar-right>li>a:hover{
+ color:#dee5ed;
+}
+
+.background {
+  position:absolute;
+  opacity: 0.5;
+  width:100% ;
+  height: 338px;
+  margin-top:60px;
+  z-index: -1;
+  border-bottom: 5px solid rgb(242,83,13);
+}
+
+.title {
+  position: static;
+  font-family:"Miriam Libre"
+  font-size:2em;
+  font-weight: bold;
+  text-align:center;
+  color:#38414c;
+}
+
+.content{
+  margin-top: 5%;
+  margin-bottom:15%;
+}
+
+
+#Introduction {
+  background: url("image-01.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width:100%;
+  height: 100%;
+  border-bottom: 5px solid rgba(242,83,13,0.8);
+}
+
+#upload{
+  font-family: "Miriam Libre";
+  margin-top: 50px;
+  text-align: center;
+}
+
+#download{
+  font-family: "Miriam Libre";
+  margin-top: 50px;
+  text-align: center;
+}
+
+input.form-control{
+    font-family: "Lato";
+}
+
+p#choose{
+  font-family: "Lato";
+  font-size: 1.5em;
+}
+
+/*Sinup pop up style */
+
+/* Full-width input fields */
+input#username,input#username1,input#usernameR,input#password, input#password1, input#repeat_password,input#email {
+    width: 50%;
+    padding: 12px 20px;
+    margin-left: 25%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button.signupbtn, 
+button.cancelbtn {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    float:left;
+}
+label{
+  margin-left:25%;
+  margin-right: 35%;
+}
+
+#login,
+#sign-up,
+#Forgot,
+#sc_save{
+  width:50%;
+}
+
+#username,
+#username1,
+#email,
+#usernameR {
+  width:50%;
+  margin-left:25%;
+}
+#password,
+#password1,
+#repeat_password {
+  width:50%;
+  margin-left:25%;
+}
+
+/* Extra styles for the cancel button */
+button.cancelbtn {
+    width:25%;
+    padding: 14px 20px;
+    background-color: rgba(244,67,54,0.8);
+}
+button.signupbtn {
+    margin-left:25%;
+    width:25%;
+    padding: 14px 20px;
+    background-color:  rgba(65,67,186,0.8);
+  }
+/* Float cancel and signup buttons and add an equal width */
+
+
+/* Add padding to container elements */
+.containerbox {
+  width:100%;
+  padding: 16px 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 350px) {
+    .cancelbtn, .signupbtn {
+       width: 200%;
+    }
+}
+
+
+#down-btn{
+  margin-top:0.1%;
+  background-color:rgba(65,67,186,0.9);
+}
+
+
+#up-btn {
+  margin-top:3%;
+  background-color:rgba(65,67,186,0.9);
+}
+
+table {
+  padding: 10px;
+  background-color: rgb(212, 214, 214);
+  border-collapse:collapse;
+  margin-bottom:2%;
+}
+
+
+td {
+  font-family: "Calibri";
+  font-size: 1.05em;
+  font-weight: lighter;
+  text-align:right;
+  border: 2px solid white ;
+  height: 1em;
+  padding-left:2px;
+  padding-right:2px;
+}
+
+tr{
+  font-family: "Calibri";
+  font-size: 0.8em;
+  text-align: right;
+  border-bottom: 2px solid white ;
+   
+}
+
+th {
+  padding: 5px;
+  font-family: "Calibri";
+  font-size: 1.15em;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid white ;
+}
+
+input.tbchart{
+width:100%;
+height: 0.5em;
+text-align: right;
+box-sizing: border-box;
+}
+
+input.tbchart_readonly{
+  width:100%;
+  height: 0.5em;
+  text-align: right;
+  box-sizing: border-box;
+  color:rgba(0,0,0,0.5);
+}
+
+input.titles{
+font-weight: bolder;
+width:100%;
+height: 0.5em;
+text-align: left;
+box-sizing: border-box;
+}
+
+.btn.btn-default.clicked {
+  background-color: #ccc;
+}
+
+#Display{
+  text-align:center;
+  padding-top: 1%;
+  margin-right: auto;
+  margin-left: auto;   
+}
+
+@media (min-width: 768px) {
+  #Display {
+    width: 970px;
+  }
+}
+@media (min-width: 992px) {
+  #Display {
+    width: 1170px;
+  }
+}
+@media (min-width: 1200px) {
+  #Display {
+    width: 1870px;
+  }
+}
+
+#Display2{
+  text-align:center;
+  padding-top: 5%;
+  margin-right: auto;
+  margin-left: 30%;   
+}
+
+@media (min-width: 768px) {
+  #Display2 {
+    width: 970px;
+  }
+}
+@media (min-width: 992px) {
+  #Display2 {
+    width: 1170px;
+  }
+}
+@media (min-width: 1200px) {
+  #Display2 {
+    width: 1870px;
+  }
+}
+
+.button_div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .button_div {
+    width: 470px;
+    height:270px; 
+  }
+}
+@media (min-width: 992px) {
+  .button_div {
+    width: 470px;
+    height:270px;
+  }
+}
+@media (min-width: 1200px) {
+  .button_div {
+    width: 470px;
+    height:270px;
+  }
+}
+
+.intext-btn{
+  padding:2%;
+  background-color:rgba(141, 192, 238,0.5);
+}
+
+/*Tablestyling*/
+#Macropa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#Macropa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#Macropa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#Macropa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#Macropa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#Macropa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#Macropa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#Macropa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#LOSrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#LOSrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#LOSrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#LOSrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#LOSrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#LOSrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#LOSrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#LOSrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#TOPGhelratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#TOPGhelratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#TOPGhelratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#TOPGhelratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#TOPGhelratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#TOPGhelratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#TOPGhelratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#TOPGhelratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#PG_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#PG_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#PG_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#PG_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#PG_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#PG_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#PG_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#PG_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#TIPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#TIPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#TIPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#TIPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#TIPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#TIPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#TIPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#TIPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#CENPGSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#CENPGSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#CENPGSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#CENPGSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#CENPGSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#CENPGSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#CENPGSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#CENPGSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#CENPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#CENPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#CENPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#CENPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#CENPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#CENPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#CENPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#CENPGshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#TOBOIRatio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#TOBOIRatio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#TOBOIRatio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#TOBOIRatio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#TOBOIRatio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#TOBOIRatio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#TOBOIRatio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#TOBOIRatio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#BOI_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#BOI_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#BOI_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#BOI_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#BOI_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#BOI_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#BOI_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#BOI_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#TIBOIshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#TIBOIshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#TIBOIshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#TIBOIshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#TIBOIshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#TIBOIshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#TIBOIshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#TIBOIshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#DH_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#DH_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#DH_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#DH_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#DH_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#DH_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#DH_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#DH_Effic.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#TIDHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#TIDHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#TIDHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#TIDHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#TIDHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#TIDHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#TIDHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#TIDHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#CENOTHSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#CENOTHSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#CENOTHSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#CENOTHSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#CENOTHSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#CENOTHSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#CENOTHSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#CENOTHSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#CENOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#CENOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#CENOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#CENOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#CENOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#CENOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#CENOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#CENOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#CENRFSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#CENRFSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#CENRFSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#CENRFSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#CENRFSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#CENRFSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#CENRFSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#CENRFSEC.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#CENRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#CENRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#CENRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#CENRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#CENRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#CENRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#CENRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#CENRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#TIOTHratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#TIOTHratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#TIOTHratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#TIOTHratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#TIOTHratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#TIOTHratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#TIOTHratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#TIOTHratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#TIOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#TIOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#TIOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#TIOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#TIOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#TIOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#TIOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#TIOTHshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#TIRFratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#TIRFratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#TIRFratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#TIRFratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#TIRFratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#TIRFratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#TIRFratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#TIRFratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#TIRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#TIRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#TIRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#TIRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#TIRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#TIRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#TIRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#TIRFshares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#TOOTHrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#TOOTHrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#TOOTHrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#TOOTHrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#TOOTHrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#TOOTHrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#TOOTHrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#TOOTHrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#TORFrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#TORFrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#TORFrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#TORFrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#TORFrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#TORFrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#TORFrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#TORFrate.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#CleanGas.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#CleanGas.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#CleanGas.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#CleanGas.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#CleanGas.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#CleanGas.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#CleanGas.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#CleanGas.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#PPRODratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#PPRODratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#PPRODratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#PPRODratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#PPRODratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#PPRODratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#PPRODratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#NIMPratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#NIMPratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#NIMPratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#NIMPratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#NIMPratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#NIMPratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#NIMPratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#NIMPratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#CSratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#CSratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#CSratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#CSratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#CSratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#CSratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#CSratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#CSratio.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#Servicesel.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#Servicesel.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#Servicesel.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#Servicesel.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#Servicesel.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#Servicesel.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#Servicesel.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#Servicesel.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#ETSsplit.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#ETSsplit.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#ETSsplit.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#ETSsplit.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#ETSsplit.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#ETSsplit.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#ETSsplit.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#ETSsplit.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#Usefulserv_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#Usefulserv_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#Usefulserv_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#Usefulserv_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#Usefulserv_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#Usefulserv_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#Usefulserv_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#Usefulserv_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#ProcessUEI_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#ProcessUEI_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#ProcessUEI_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#ProcessUEI_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#ProcessUEI_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#ProcessUEI_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#ProcessUEI_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#ProcessUEI_inputs.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#ProcessUShares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#ProcessUShares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#ProcessUShares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#ProcessUShares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#ProcessUShares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#ProcessUShares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#ProcessUShares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9),
+#ProcessUShares.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(10) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#EnergySh.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#EnergySh.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#EnergySh.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#EnergySh.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#EnergySh.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#EnergySh.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9),
+#EnergySh.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(10),
+#EnergySh.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(11) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#ProcessFEIpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3){
+  background-color: rgba(240, 221, 158,0.5);
+}
+#ProcessFEIpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#ProcessFEIpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#ProcessFEIpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#ProcessFEIpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#ProcessFEIpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#ProcessFEIpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9),
+#ProcessFEIpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(10) {
+  background-color: rgba(141, 192, 238,0.5);
+}
+
+#Macro.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2),
+#Macro.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#Macro.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#Macro.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#Macro.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#Macro.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#Macro.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#Macro.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(162, 178, 184 ,0.5);
+}
+
+#Driverpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2),
+#Driverpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#Driverpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#Driverpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#Driverpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#Driverpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#Driverpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#Driverpa.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(162, 178, 184 ,0.5);
+}
+
+#Usefulserv.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2),
+#Usefulserv.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#Usefulserv.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#Usefulserv.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#Usefulserv.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#Usefulserv.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#Usefulserv.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#Usefulserv.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(162, 178, 184 ,0.5);
+}
+
+#ProcessUEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(2),
+#ProcessUEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#ProcessUEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#ProcessUEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#ProcessUEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#ProcessUEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#ProcessUEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#ProcessUEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9) {
+  background-color: rgba(162, 178, 184 ,0.5);
+}
+
+
+
+#ProcessFEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(3),
+#ProcessFEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(4),
+#ProcessFEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(5),
+#ProcessFEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(6),
+#ProcessFEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(7),
+#ProcessFEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(8),
+#ProcessFEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(9),
+#ProcessFEI.hot.handsontable.htColumnHeaders>.ht_master tr > td:nth-child(10) {
+  background-color: rgba(162, 178, 184 ,0.5);
+}
+
+
+
+#output_table.hot.handsontable.htColumnHeaders>.ht_master tr > td.htRight.htNumeric.htDimmed{
+  background-color: rgba(162, 178, 184 ,0.5);
+}
+
+.handsontable table thead th {
+  white-space: pre-line;
+  max-width: 140px;
+}
+
+#Macropa,#Macro,#Driverpa,#Servicesel,#Usefulserv_inputs,#Usefulserv,#ProcessUEI_inputs,#ProcessUEI,
+#ProcessUShares,#ProcessFEI,#ProcessFEIpa,#EnergySh,#LOSrate,#TOPGhelratio,#PG_Effic,#TIPGshares,
+#CENPGSEC,#CENPGshares,#TOBOIRatio,#BOI_Effic,#TIBOIshares,#DH_Effic,#TIDHshares,#CENOTHSEC,#CENOTHshares,
+#CENRFSEC,#CENRFshares,#TIOTHratio,#TIOTHshares,#TIRFratio,#TIRFshares,#TOOTHrate,#TORFrate,#NIMPratio,
+#PPRODratio,#CSratio,#ETSsplit,#CleanGas{
+  padding-bottom: 4%;
+}
+
+#wait {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.5em;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: url('ajax-loader.gif') 
+                rgba( 255, 255, 255, .8 ) 
+                50% 65% 
+                no-repeat;
+}
+
